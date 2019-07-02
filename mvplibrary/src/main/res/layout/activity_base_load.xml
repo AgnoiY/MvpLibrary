@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+        <com.cjy.mvplibrary.view.linearlayout.StatusBarHeightView
+            android:id="@+id/status_bar_height_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.cjy.mvplibrary.view.framelayout.TopTitleLayout
+                android:id="@+id/title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.cjy.mvplibrary.view.framelayout.TopTitleLayout>
+
+            <View
+                android:id="@+id/view_v"
+                style="@style/style_split_line"
+                android:visibility="gone" />
+
+            <com.cjy.mvplibrary.view.framelayout.ViewLoadLayout
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/bg_gray" />
+
+        </com.cjy.mvplibrary.view.linearlayout.StatusBarHeightView>
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,95 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Dialog提示框 -->
+    <style name="TipDialog" parent="LoadingDialogLight">
+        <!--阴影-->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <attr name="LoadingViewStyle" format="reference" />
+
+    <declare-styleable name="LoadingView">
+        <attr name="loading_view_size" format="dimension" />
+        <attr name="loading_view_color" format="color" />
+    </declare-styleable>
+
+    <!--加载框-->
+    <style name="LoadingDialogLight" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景颜色及和透明程度 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 屏幕背景不变暗 -->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--弹框styles设置-->
+
+    <!--长的分割线styles设置-->
+    <style name="style_split_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_distance_cd</item>
+        <item name="android:background">@color/line_gray_cd</item>
+    </style>
+
+    <!--短的分割线styles设置-->
+    <style name="style_split_vline">
+        <item name="android:layout_width">@dimen/line_distance_cd</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/line_gray_cd</item>
+    </style>
+
+    <!--tabLayout滑动设置-->
+    <style name="MyTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/tablayout_select</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/tablayout_select</item>
+    </style>
+
+    <!--Tablayout字体大小-->
+    <style name="MyTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/text_three</item>
+    </style>
+
+    <!-- 圆形边框的ImageView -->
+    <declare-styleable name="RoundImageView">
+        <!--设置边框的宽度-->
+        <attr name="borderThickness" format="dimension" />
+        <!--设置外边框的颜色-->
+        <attr name="borderInsideColor" format="color" />
+    </declare-styleable>
+
+    <!--带边框的TextView-->
+    <declare-styleable name="BorderLabelTextView">
+        <!--边框的宽度，默认为1dp-->
+        <attr name="strokeWidth" format="dimension" />
+        <!--圆角半径，默认为2dp-->
+        <attr name="cornerRadius" format="dimension" />
+        <!--边框颜色，默认是没有边框即颜色为Color.TRANSPARENT-->
+        <attr name="strokeColor" format="color" />
+        <!--边框是否跟随文字颜色，默认是false-->
+        <attr name="followTextColor" format="boolean" />
+        <!--实心或空心，默认是false(空心)-->
+        <attr name="isSolid" format="boolean" />
+        <!--字数量改变边距，默认是true(改变)-->
+        <attr name="isTextNumPadding" format="boolean" />
+    </declare-styleable>
+
+</resources>
