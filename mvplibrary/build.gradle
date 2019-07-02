@@ -45,10 +45,10 @@ android {
         enabled true
     }
 
-    lintOptions {
-        checkReleaseBuilds false
-        abortOnError false
-    }
+//    lintOptions {
+//        checkReleaseBuilds false
+//        abortOnError false
+//    }
 }
 
 dependencies {
