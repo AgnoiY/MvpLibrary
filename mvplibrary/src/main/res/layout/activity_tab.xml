@@ -16,13 +16,13 @@
                 style="@style/MyTabLayout"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/title_height"
-                android:background="@color/white"/>
-                <!--app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"/>-->
+                android:background="@color/white"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"/>
 
             <View
                 android:id="@+id/view_v"
-                style="@style/style_split_line"/>
-                <!--app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"/>-->
+                style="@style/style_split_line"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"/>
 
         </android.support.design.widget.AppBarLayout>
 
@@ -30,8 +30,8 @@
         <com.cjy.mvplibrary.view.viewpager.EnabledViewpager
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
     </android.support.design.widget.CoordinatorLayout>
 </layout>
