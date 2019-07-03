@@ -58,15 +58,15 @@
     <style name="MyTabLayout" parent="Widget.Design.TabLayout">
         <item name="tabIndicatorColor">@color/tablayout_select</item>
         <item name="tabIndicatorHeight">2dp</item>
-        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+        <!--<item name="tabTextAppearance">@style/MyTabTextAppearance</item>-->
         <item name="tabSelectedTextColor">@color/tablayout_select</item>
     </style>
 
-    <!--Tablayout字体大小-->
-    <style name="MyTabTextAppearance" parent="TextAppearance.Design.Tab">
-        <item name="android:textSize">@dimen/text_16</item>
-        <item name="android:textColor">@color/text_three</item>
-    </style>
+    <!--&lt;!&ndash;Tablayout字体大小&ndash;&gt;-->
+    <!--<style name="MyTabTextAppearance" parent="TextAppearance.Design.Tab">-->
+        <!--<item name="android:textSize">@dimen/text_16</item>-->
+        <!--<item name="android:textColor">@color/text_three</item>-->
+    <!--</style>-->
 
     <!-- 圆形边框的ImageView -->
     <declare-styleable name="RoundImageView">
