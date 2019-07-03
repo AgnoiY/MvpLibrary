@@ -59,8 +59,7 @@
                 android:layout_height="@dimen/title_img_right_height"
                 android:layout_gravity="center_vertical|right"
                 android:layout_marginRight="@dimen/title_right"
-                android:visibility="gone"
-                tools:src="@mipmap/ic_launcher" />
+                android:visibility="gone" />
 
 
             <TextView
