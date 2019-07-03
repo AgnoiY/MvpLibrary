@@ -6,10 +6,10 @@
         android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/bg_gray">
-        <!--app:srlAccentColor="@android:color/tertiary_text_dark"-->
-        <!--app:srlEnablePreviewInEditMode="true"-->
-        <!--app:srlPrimaryColor="@color/bg_gray">-->
+        android:background="@color/bg_gray"
+        app:srlAccentColor="@android:color/tertiary_text_dark"
+        app:srlEnablePreviewInEditMode="true"
+        app:srlPrimaryColor="@color/bg_gray">
         <!--srlAccentColor srlPrimaryColor 将会改变 Header 和 Footer 的主题颜色-->
         <!--srlEnablePreviewInEditMode 可以开启和关闭预览功能-->
         <com.scwang.smartrefresh.layout.header.ClassicsHeader

@@ -74,7 +74,7 @@ dependencies {
     implementation rootProject.ext.dependencies.design
     implementation rootProject.ext.dependencies.multidex
     /*图片加载框架*/
-    implementation rootProject.ext.dependencies.glide
+//    implementation rootProject.ext.dependencies.glide
     /*事件线Eventbus*/
     implementation rootProject.ext.dependencies.eventbus
     /*recyclerView*/

@@ -81,6 +81,7 @@ public class MainActivity extends BaseLoadActivity<Object, ActivityMainBinding>
 //            CommonDialog<ActivityLoginBinding> builder = new CommonDialog<>(mContext, R.layout.activity_login);
             builder.setClickListenter(msg -> ToastUtils.makeCenterToast(mContext, "asd"));
             builder.shows();
+
         }
     }
 
