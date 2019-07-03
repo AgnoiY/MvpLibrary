@@ -57,7 +57,7 @@
     <!--tabLayout滑动设置-->
     <style name="MyTabLayout" parent="Widget.Design.TabLayout">
         <item name="tabIndicatorColor">@color/tablayout_select</item>
-        <item name="tabIndicatorHeight">2dp</item>
+        <!--<item name="tabIndicatorHeight">2dp</item>-->
         <!--<item name="tabTextAppearance">@style/MyTabTextAppearance</item>-->
         <item name="tabSelectedTextColor">@color/tablayout_select</item>
     </style>
