@@ -26,12 +26,17 @@ android {
             //Zipalign优化
             zipAlignEnabled true
 
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
         debug {
             //混淆
             minifyEnabled false
+
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
