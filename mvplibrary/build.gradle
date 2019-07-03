@@ -22,7 +22,7 @@ android {
     buildTypes {
         release {
             //混淆
-            minifyEnabled false
+            minifyEnabled true
             //Zipalign优化
             zipAlignEnabled true
 
@@ -50,10 +50,6 @@ android {
         enabled true
     }
 
-//    lintOptions {
-//        checkReleaseBuilds false
-//        abortOnError false
-//    }
 }
 
 dependencies {
