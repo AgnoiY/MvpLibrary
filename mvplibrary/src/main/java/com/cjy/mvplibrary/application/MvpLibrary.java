@@ -20,9 +20,9 @@ public class MvpLibrary {
      *
      * @param application
      */
-    public static void init(Application application) {
+    public static void init(Application application, String baseUrl) {
         if (application != null) {
-            AppLibrary.init(application);
+            AppLibrary.init(application, baseUrl);
         }
     }
 

@@ -10,6 +10,7 @@ import com.cjy.mvplibrary.bridge.BridgeFactory;
 import com.cjy.mvplibrary.bridge.BridgeLifeCycleSetKeeper;
 import com.cjy.mvplibrary.utils.LogUtils;
 import com.cjy.mvplibrary.utils.ToastUtils;
+import com.cjy.retrofitlibrary.application.RetrofitLibrary;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -28,7 +29,7 @@ import static com.cjy.mvplibrary.constant.Constants.IS_DEBUG;
 public class AppLibrary {
 
     AppLibrary() {
-        throw new IllegalStateException("AppLibrary class");
+        throw new IllegalStateException("RetrofitLibrary class");
     }
 
     private static Application mApplication;
@@ -48,11 +49,11 @@ public class AppLibrary {
      *
      * @param application
      */
-    public static void init(Application application) {
+    public static void init(Application application, String baseUrl) {
         if (application != null) {
             mApplication = application;
             install(application);
-            initData();
+            initData(baseUrl);
         }
     }
 
@@ -68,15 +69,10 @@ public class AppLibrary {
     /**
      * 初始化数据
      */
-    private static void initData() {
-        setApp(mApplication);
-        BridgeFactory.init(mApplication);
+    private static void initData(String baseUrl) {
+        BridgeFactory.init(RetrofitLibrary.init(mApplication, baseUrl));
         BridgeLifeCycleSetKeeper.getInstance().initOnApplicationCreate(mApplication);
         EventBus.builder().throwSubscriberException(IS_DEBUG).installDefaultEventBus();
-    }
-
-    private static void setApp(Application mApp) {
-        mApplication = mApp;
     }
 
     /**
@@ -85,6 +81,7 @@ public class AppLibrary {
     public static void onDestory() {
         BridgeLifeCycleSetKeeper.getInstance().clearOnApplicationQuit();
         BridgeFactory.destroy();
+        RetrofitLibrary.onDestory();
         ToastUtils.destory();
         if (activitys != null) {
             activitys.clear();

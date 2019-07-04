@@ -93,4 +93,5 @@ dependencies {
     implementation rootProject.ext.dependencies.rxlifecycle
     implementation rootProject.ext.dependencies.components
     implementation project(':mvplibrary')
+    implementation project(':retrofitlibrary')
 }

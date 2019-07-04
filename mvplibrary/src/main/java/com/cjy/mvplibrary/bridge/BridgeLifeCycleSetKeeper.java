@@ -20,7 +20,7 @@ public class BridgeLifeCycleSetKeeper implements BridgeLifeCycleListener {
 
     private BridgeLifeCycleSetKeeper() {
         mBridgeLiftCycleListenerSet = Collections
-                .synchronizedList(new ArrayList<BridgeLifeCycleListener>());
+                .synchronizedList(new ArrayList<>());
     }
 
     private List<BridgeLifeCycleListener> mBridgeLiftCycleListenerSet;

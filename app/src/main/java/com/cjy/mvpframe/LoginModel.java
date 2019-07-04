@@ -1,6 +1,6 @@
 package com.cjy.mvpframe;
 
-import com.cjy.mvplibrary.bean.base.BaseResponseModel;
+import com.cjy.retrofitlibrary.model.BaseResponseModel;
 
 import java.util.List;
 

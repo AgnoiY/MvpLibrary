@@ -16,7 +16,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        MvpLibrary.init(this);
+        MvpLibrary.init(this, UrlConstans.BASESERVER);
     }
 
     @Override

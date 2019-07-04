@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.cjy.mvplibrary.R;
-import com.cjy.mvplibrary.capabilities.http.exception.ExceptionEngine;
 import com.cjy.mvplibrary.databinding.ActivityBaseLoadBinding;
 import com.cjy.mvplibrary.presenter.base.BasePresenter;
 import com.cjy.mvplibrary.presenter.base.IMvpView;
@@ -22,6 +21,7 @@ import com.cjy.mvplibrary.utils.NetUtils;
 import com.cjy.mvplibrary.utils.ToastUtils;
 import com.cjy.mvplibrary.utils.ToolsUtils;
 import com.cjy.mvplibrary.view.recyclerview.RefreshHelper;
+import com.cjy.retrofitlibrary.exception.ExceptionEngine;
 
 import java.util.ArrayList;
 import java.util.List;

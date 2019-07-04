@@ -2,11 +2,10 @@ package com.cjy.mvplibrary.bridge;
 
 import android.app.Application;
 
-import com.cjy.mvplibrary.bridge.http.RetrofitHttp;
 import com.cjy.mvplibrary.bridge.localstorage.LocalFileStorageManager;
-import com.cjy.mvplibrary.bridge.sharepref.SharedPrefManager;
 import com.cjy.mvplibrary.bridge.security.SecurityManager;
-import com.cjy.mvplibrary.constant.UrlConstans;
+import com.cjy.mvplibrary.bridge.sharepref.SharedPrefManager;
+import com.cjy.retrofitlibrary.observ.RetrofitHttp;
 
 import java.util.HashMap;
 
@@ -26,13 +25,13 @@ public class BridgeFactory {
         mBridges = new HashMap<>();
     }
 
-    public static void init(Application application) {
+    public static void init(RetrofitHttp.Builder builder) {
         model = new BridgeFactory();
         model.iniLocalFileStorageManager();
         model.initPreferenceManager();
         model.initSecurityManager();
         model.initUserSession();
-        model.initOkHttpManager(application);
+        model.initOkHttpManager(builder);
     }
 
     public static void destroy() {
@@ -61,11 +60,8 @@ public class BridgeFactory {
     /**
      * 网络请求管理类
      */
-    private void initOkHttpManager(Application application) {
-        RetrofitHttp.Configure.get().baseUrl(UrlConstans.BASESERVER).init(application);
-        RetrofitHttp.Builder builder = new RetrofitHttp.Builder().getInstance();
+    private void initOkHttpManager(RetrofitHttp.Builder builder) {
         model.mBridges.put(Bridges.HTTP, builder);
-        BridgeLifeCycleSetKeeper.getInstance().trustBridgeLifeCycle(builder);
     }
 
     /**

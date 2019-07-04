@@ -1,6 +1,6 @@
 package com.cjy.mvpframe;
 
-import com.cjy.mvplibrary.bridge.http.BaseModelObserver;
+import com.cjy.mvplibrary.bridge.http.ModelObserver;
 import com.cjy.mvplibrary.constant.UrlConstans;
 import com.cjy.mvplibrary.presenter.base.BasePresenter;
 import com.cjy.mvplibrary.presenter.base.IMvpView;
@@ -25,7 +25,7 @@ public class LoginPresenter extends BasePresenter<IMvpView> {
 
         getRetrofitHttp().post().apiUrl(UrlConstans.LOGIN)
                 .addParameter(map).build()
-                .request(new BaseModelObserver<LoginModel>(this) {
+                .request(new ModelObserver<LoginModel>(this) {
                 });
     }
 
@@ -41,7 +41,7 @@ public class LoginPresenter extends BasePresenter<IMvpView> {
 
         getRetrofitHttp().post().apiUrl(UrlConstans.LIST)
                 .addParameter(map).build()
-                .request(new BaseModelObserver<LoginModel>(this, isRefresh) {
+                .request(new ModelObserver<LoginModel>(this, isRefresh) {
                 });
 
     }

@@ -6,10 +6,10 @@ import com.cjy.mvplibrary.R;
 import com.cjy.mvplibrary.application.AppLibrary;
 import com.cjy.mvplibrary.bridge.BridgeFactory;
 import com.cjy.mvplibrary.bridge.Bridges;
-import com.cjy.mvplibrary.bridge.http.RetrofitHttp;
 import com.cjy.mvplibrary.bridge.sharepref.SharedPrefManager;
 import com.cjy.mvplibrary.bridge.sharepref.SharedPrefUser;
 import com.cjy.mvplibrary.utils.LogUtils;
+import com.cjy.retrofitlibrary.observ.RetrofitHttp;
 import com.trello.rxlifecycle2.LifecycleProvider;
 
 import java.lang.ref.WeakReference;

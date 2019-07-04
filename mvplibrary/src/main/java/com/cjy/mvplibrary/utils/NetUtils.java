@@ -10,7 +10,7 @@ import android.os.Build;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 
-import com.cjy.mvplibrary.view.dialog.LoadingDialog;
+import com.cjy.retrofitlibrary.dialog.LoadingDialog;
 
 import java.lang.reflect.Method;
 
