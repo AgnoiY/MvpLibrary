@@ -91,7 +91,7 @@ dependencies {
     implementation rootProject.ext.dependencies.rxandroid
     implementation rootProject.ext.dependencies.rxjava
     /*RxLifecycle基础库*/
-    implementation rootProject.ext.dependencies.rxlifecycle/**/
+    implementation rootProject.ext.dependencies.rxlifecycle
     implementation rootProject.ext.dependencies.components
     implementation project(':mvplibrary')
 }
