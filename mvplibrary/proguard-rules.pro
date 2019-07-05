@@ -167,6 +167,7 @@
 -keep class com.cjy.mvplibrary.ui.base.**{*;}
 -keep class com.cjy.mvplibrary.utils.**{*;}
 -keep class com.cjy.mvplibrary.view.**{*;}
+-keep class public class * extends android.databinding.**{*;}
 
 #
 #----------------------------- WebView -----------------------------
