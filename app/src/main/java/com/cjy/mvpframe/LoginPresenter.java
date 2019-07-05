@@ -1,10 +1,11 @@
 package com.cjy.mvpframe;
 
 import com.cjy.mvplibrary.bridge.http.ModelObserver;
-import com.cjy.mvplibrary.constant.UrlConstans;
+import com.cjy.mvplibrary.bridge.http.UploadModelObserver;
 import com.cjy.mvplibrary.presenter.base.BasePresenter;
 import com.cjy.mvplibrary.presenter.base.IMvpView;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,7 +26,7 @@ public class LoginPresenter extends BasePresenter<IMvpView> {
 
         getRetrofitHttp().post().apiUrl(UrlConstans.LOGIN)
                 .addParameter(map).build()
-                .request(new ModelObserver<LoginModel>(this) {
+                .request(new ModelObserver<LoginModel>(this, true) {
                 });
     }
 

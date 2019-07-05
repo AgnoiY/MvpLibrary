@@ -1,7 +1,5 @@
 package com.cjy.mvpframe;
 
-import com.cjy.retrofitlibrary.BuildConfig;
-
 /**
  * <网络请求url地址>
  * Data：2018/12/18

@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 import com.cjy.mvplibrary.R;
 import com.cjy.mvplibrary.application.AppLibrary;
-import com.cjy.mvplibrary.bean.event.BaseEventModel;
+import com.cjy.mvplibrary.event.BaseEventModel;
 import com.cjy.mvplibrary.presenter.base.BasePresenter;
 import com.cjy.mvplibrary.presenter.base.IMvpView;
 import com.cjy.mvplibrary.ui.base.PresentationLayerFuncHelper;

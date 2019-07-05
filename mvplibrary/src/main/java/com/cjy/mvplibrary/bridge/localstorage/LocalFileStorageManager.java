@@ -3,7 +3,6 @@ package com.cjy.mvplibrary.bridge.localstorage;
 import android.content.Context;
 
 import com.cjy.mvplibrary.bridge.BridgeLifeCycleListener;
-import com.cjy.mvplibrary.capabilities.cache.FileUtil;
 
 import java.io.File;
 

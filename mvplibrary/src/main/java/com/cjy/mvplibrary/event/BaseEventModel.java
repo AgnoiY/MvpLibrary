@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.bean.event;
+package com.cjy.mvplibrary.event;
 
 import java.util.ArrayList;
 import java.util.List;

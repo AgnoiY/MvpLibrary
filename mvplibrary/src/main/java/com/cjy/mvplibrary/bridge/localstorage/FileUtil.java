@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.capabilities.cache;
+package com.cjy.mvplibrary.bridge.localstorage;
 
 import android.content.Context;
 import android.os.Build;

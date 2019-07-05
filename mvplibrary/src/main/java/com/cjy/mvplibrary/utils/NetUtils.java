@@ -10,8 +10,6 @@ import android.os.Build;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 
-import com.cjy.retrofitlibrary.dialog.LoadingDialog;
-
 import java.lang.reflect.Method;
 
 /**
@@ -108,13 +106,13 @@ public class NetUtils {
      * @return
      */
     public static boolean openWifi(Context context) {
-        LoadingDialog loadingDialog = new LoadingDialog(context);
-        loadingDialog.showDialog();
+//        LoadingDialog loadingDialog = new LoadingDialog(context);
+//        loadingDialog.showDialog();
         WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
         wifiManager.setWifiEnabled(true);
         while (true)
             if (isWifi(context)) {
-                loadingDialog.closeDialog();
+//                loadingDialog.closeDialog();
                 return wifiManager.isWifiEnabled();
             }
     }

@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.capabilities.security;
+package com.cjy.mvplibrary.bridge.security;
 
 /**
  * <加解密实现类>

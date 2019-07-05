@@ -158,7 +158,15 @@
 }
 
 #反射相关的类和方法
--keep class com.mvpframe.bean.**{*;}
+-keep class com.cjy.mvplibrary.application.MvpLibrary{*;}
+-keep class com.cjy.mvplibrary.bridge.**{*;}
+-keep class com.cjy.mvplibrary.constant.Constants{*;}
+-keep class com.cjy.mvplibrary.event.BaseEventModel{*;}
+-keep class com.cjy.mvplibrary.event.BaseEventModel{*;}
+-keep class com.cjy.mvplibrary.presenter.base.**{*;}
+-keep class com.cjy.mvplibrary.ui.base.**{*;}
+-keep class com.cjy.mvplibrary.utils.**{*;}
+-keep class com.cjy.mvplibrary.view.**{*;}
 
 #
 #----------------------------- WebView -----------------------------
@@ -226,14 +234,6 @@
 -keep public class * extends com.chad.library.adapter.base.BaseViewHolder
 -keepclassmembers  class **$** extends com.chad.library.adapter.base.BaseViewHolder {
      <init>(...);
-}
-
-# glide 图片加载
--keep public class * implements com.bumptech.glide.module.GlideModule
--keep public class * extends com.bumptech.glide.module.AppGlideModule
--keep public enum com.bumptech.glide.load.ImageHeaderParser$** {
-  **[] $VALUES;
-  public *;
 }
 
 # Rxjava RxAndroid 异步

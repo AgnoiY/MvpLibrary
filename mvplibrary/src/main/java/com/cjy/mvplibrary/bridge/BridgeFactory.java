@@ -1,11 +1,9 @@
 package com.cjy.mvplibrary.bridge;
 
-import android.app.Application;
-
 import com.cjy.mvplibrary.bridge.localstorage.LocalFileStorageManager;
 import com.cjy.mvplibrary.bridge.security.SecurityManager;
 import com.cjy.mvplibrary.bridge.sharepref.SharedPrefManager;
-import com.cjy.retrofitlibrary.observ.RetrofitHttp;
+import com.cjy.retrofitlibrary.RetrofitHttp;
 
 import java.util.HashMap;
 

@@ -3,6 +3,7 @@ package com.cjy.mvpframe;
 import android.app.Application;
 
 import com.cjy.mvplibrary.application.MvpLibrary;
+import com.cjy.retrofitlibrary.RetrofitLibrary;
 
 /**
  * <应用初始化> <功能详细描述>

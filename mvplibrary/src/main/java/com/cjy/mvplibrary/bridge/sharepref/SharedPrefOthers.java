@@ -2,8 +2,6 @@ package com.cjy.mvplibrary.bridge.sharepref;
 
 import android.content.Context;
 
-import com.cjy.mvplibrary.capabilities.cache.BaseSharedPreference;
-
 
 /**
  * <其他信息缓存>

@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.cjy.mvplibrary.bean.event.BaseEventModel;
+import com.cjy.mvplibrary.event.BaseEventModel;
 import com.cjy.mvplibrary.presenter.base.BasePresenter;
 import com.cjy.mvplibrary.presenter.base.IMvpView;
 import com.cjy.mvplibrary.ui.base.PresentationLayerFuncHelper;

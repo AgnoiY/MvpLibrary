@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.capabilities.cache;
+package com.cjy.mvplibrary.bridge.sharepref;
 
 import android.content.Context;
 import android.content.SharedPreferences;

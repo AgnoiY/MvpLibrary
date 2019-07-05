@@ -10,7 +10,7 @@ import com.cjy.mvplibrary.bridge.BridgeFactory;
 import com.cjy.mvplibrary.bridge.BridgeLifeCycleSetKeeper;
 import com.cjy.mvplibrary.utils.LogUtils;
 import com.cjy.mvplibrary.utils.ToastUtils;
-import com.cjy.retrofitlibrary.application.RetrofitLibrary;
+import com.cjy.retrofitlibrary.RetrofitLibrary;
 
 import org.greenrobot.eventbus.EventBus;
 

@@ -82,6 +82,7 @@ dependencies {
     implementation rootProject.ext.dependencies.smartrefresh
     implementation rootProject.ext.dependencies.recyclerViewAdapter
     /*网络请求框架*/
+    implementation 'com.github.AgnoiY:RrtrofitFrame:1.0.19'
     implementation rootProject.ext.dependencies.okhttp3
     implementation rootProject.ext.dependencies.retrofit
     implementation rootProject.ext.dependencies.rxjava2
@@ -90,8 +91,7 @@ dependencies {
     implementation rootProject.ext.dependencies.rxandroid
     implementation rootProject.ext.dependencies.rxjava
     /*RxLifecycle基础库*/
-    implementation rootProject.ext.dependencies.rxlifecycle
+    implementation rootProject.ext.dependencies.rxlifecycle/**/
     implementation rootProject.ext.dependencies.components
     implementation project(':mvplibrary')
-    implementation project(':retrofitlibrary')
 }

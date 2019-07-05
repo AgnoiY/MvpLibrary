@@ -2,7 +2,6 @@ package com.cjy.mvplibrary.bridge.sharepref;
 
 import android.content.Context;
 
-import com.cjy.mvplibrary.capabilities.cache.BaseSharedPreference;
 import com.cjy.mvplibrary.utils.ToolsUtils;
 
 

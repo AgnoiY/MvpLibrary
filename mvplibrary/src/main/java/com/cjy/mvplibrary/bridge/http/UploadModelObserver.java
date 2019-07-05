@@ -8,9 +8,9 @@ import com.cjy.mvplibrary.bridge.sharepref.SharedPrefManager;
 import com.cjy.mvplibrary.presenter.base.BasePresenter;
 import com.cjy.mvplibrary.utils.ToastUtils;
 import com.cjy.mvplibrary.view.dialog.UITipDialog;
-import com.cjy.retrofitlibrary.HttpObserver;
 import com.cjy.retrofitlibrary.R;
 import com.cjy.retrofitlibrary.RetrofitLibrary;
+import com.cjy.retrofitlibrary.UploadObserver;
 
 import java.util.List;
 
@@ -24,26 +24,20 @@ import java.util.List;
  * <p>
  * 重要提醒 : abstract 不能给删掉
  */
-public abstract class ModelObserver<T> extends HttpObserver<T> {
+public abstract class UploadModelObserver<T> extends UploadObserver<T> {
 
     private BasePresenter mPresenter;
 
-    public ModelObserver(BasePresenter presenter) {
-        this(presenter, false, false);
-    }
-
-    public ModelObserver(BasePresenter presenter, boolean isDialog) {
-        this(presenter, isDialog, false);
+    public UploadModelObserver(BasePresenter mPresenter) {
+        this(mPresenter, false);
     }
 
     /**
      * @param presenter
-     * @param isDialog    是否显示加载进度对话框
-     * @param isCabcelble 当返回键按下是否关闭加载进度对话框
+     * @param isDialog  是否显示加载进度对话框
      */
-    public ModelObserver(BasePresenter presenter, boolean isDialog, boolean isCabcelble) {
-        super((Context) presenter.getMvpView(), isDialog, isCabcelble);
-        this.mPresenter = presenter;
+    public UploadModelObserver(BasePresenter presenter, boolean isDialog) {
+        super((Context) presenter.getMvpView(), isDialog);
     }
 
     /**
@@ -59,8 +53,6 @@ public abstract class ModelObserver<T> extends HttpObserver<T> {
         UITipDialog.showFall((Context) mPresenter.getMvpView(), desc);
         mPresenter.getMvpView().onError(action, code, desc);
     }
-
-
 
     @Override
     public void onSuccess(String action, T value) {

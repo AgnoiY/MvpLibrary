@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
 import com.cjy.mvplibrary.ui.base.interfaces.PresentationLayerFunc;
-import com.cjy.mvplibrary.bean.event.BaseEventModel;
+import com.cjy.mvplibrary.event.BaseEventModel;
 import com.cjy.mvplibrary.ui.base.activity.BaseActivity;
 import com.cjy.mvplibrary.ui.base.interfaces.PublishActivityCallBack;
 import com.cjy.mvplibrary.utils.LogUtils;

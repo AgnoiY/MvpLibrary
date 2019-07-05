@@ -2,7 +2,7 @@ package com.cjy.mvplibrary.ui.base.interfaces;
 
 import android.view.View;
 
-import com.cjy.mvplibrary.bean.event.BaseEventModel;
+import com.cjy.mvplibrary.event.BaseEventModel;
 
 import org.greenrobot.eventbus.Subscribe;
 
