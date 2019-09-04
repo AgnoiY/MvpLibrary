@@ -3,7 +3,6 @@ package com.cjy.mvpframe;
 import android.app.Application;
 
 import com.cjy.mvplibrary.application.MvpLibrary;
-import com.cjy.retrofitlibrary.RetrofitLibrary;
 
 /**
  * <应用初始化> <功能详细描述>
@@ -21,8 +20,8 @@ public class App extends Application {
     }
 
     @Override
-    public void onTerminate() {
-        super.onTerminate();
+    public void onTrimMemory(int level) {
+        super.onTrimMemory(level);
         MvpLibrary.onDestory();
     }
 }

@@ -1,16 +1,10 @@
 package com.cjy.mvplibrary.bridge.http;
 
-import android.app.Activity;
 import android.content.Context;
 
-import com.cjy.mvplibrary.application.AppLibrary;
-import com.cjy.mvplibrary.bridge.sharepref.SharedPrefManager;
 import com.cjy.mvplibrary.presenter.base.BasePresenter;
-import com.cjy.mvplibrary.utils.ToastUtils;
 import com.cjy.mvplibrary.view.dialog.UITipDialog;
 import com.cjy.retrofitlibrary.HttpObserver;
-import com.cjy.retrofitlibrary.R;
-import com.cjy.retrofitlibrary.RetrofitLibrary;
 
 import java.util.List;
 
@@ -61,7 +55,6 @@ public abstract class ModelObserver<T> extends HttpObserver<T> {
     }
 
 
-
     @Override
     public void onSuccess(String action, T value) {
         if (value instanceof List) {
@@ -69,15 +62,5 @@ public abstract class ModelObserver<T> extends HttpObserver<T> {
         } else {
             mPresenter.getMvpView().onSuccess(action, value);
         }
-    }
-
-    @Override
-    protected void isLoginToken() {
-        super.isLoginToken();
-        SharedPrefManager.getUser().clear();
-        Activity activity = AppLibrary.getActivitys().get(AppLibrary.getActivitys().size() - 1);
-        AppLibrary.clearAllAcitity();
-//        activity.startActivity(new Intent(activity, MainActivity.class));
-        ToastUtils.makeCenterToast(activity, RetrofitLibrary.getAppString(R.string.login_elsewhere));
     }
 }
