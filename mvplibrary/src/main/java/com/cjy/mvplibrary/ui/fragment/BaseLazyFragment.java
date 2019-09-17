@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.ui.base.fragment;
+package com.cjy.mvplibrary.ui.fragment;
 
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
@@ -7,9 +7,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.cjy.mvplibrary.presenter.base.BasePresenter;
-import com.cjy.mvplibrary.presenter.base.IMvpView;
-import com.cjy.mvplibrary.ui.base.interfaces.LazyCreateInit;
+import com.cjy.mvplibrary.presenter.BasePresenter;
+import com.cjy.mvplibrary.presenter.IMvpView;
+import com.cjy.mvplibrary.ui.interfaces.LazyCreateInit;
 import com.cjy.mvplibrary.utils.HandlerUtils;
 import com.cjy.mvplibrary.utils.ToolsUtils;
 import com.cjy.mvplibrary.view.recyclerview.RefreshHelper;

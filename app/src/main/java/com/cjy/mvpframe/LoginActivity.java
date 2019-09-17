@@ -2,9 +2,9 @@ package com.cjy.mvpframe;
 
 import android.support.v7.widget.RecyclerView;
 
-import com.cjy.mvplibrary.presenter.base.BasePresenter;
-import com.cjy.mvplibrary.presenter.base.IMvpView;
-import com.cjy.mvplibrary.ui.base.activity.BaseRefreshListActivity;
+import com.cjy.mvplibrary.presenter.BasePresenter;
+import com.cjy.mvplibrary.presenter.IMvpView;
+import com.cjy.mvplibrary.ui.activity.BaseRefreshListActivity;
 
 import java.util.List;
 

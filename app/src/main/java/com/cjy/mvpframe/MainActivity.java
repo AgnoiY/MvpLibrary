@@ -7,9 +7,9 @@ import android.view.View;
 import com.cjy.mvpframe.databinding.ActivityMainBinding;
 import com.cjy.mvplibrary.bridge.sharepref.SharedPrefManager;
 import com.cjy.mvplibrary.bridge.sharepref.SharedPrefUser;
-import com.cjy.mvplibrary.presenter.base.BasePresenter;
-import com.cjy.mvplibrary.presenter.base.IMvpView;
-import com.cjy.mvplibrary.ui.base.activity.BaseLoadActivity;
+import com.cjy.mvplibrary.presenter.BasePresenter;
+import com.cjy.mvplibrary.presenter.IMvpView;
+import com.cjy.mvplibrary.ui.activity.BaseLoadActivity;
 import com.cjy.mvplibrary.utils.ToastUtils;
 import com.cjy.mvplibrary.view.dialog.CommonDialog;
 

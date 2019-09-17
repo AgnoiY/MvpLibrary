@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.cjy.mvplibrary.R;
 import com.cjy.mvplibrary.databinding.DialogBaseCommonBinding;
-import com.cjy.mvplibrary.ui.base.interfaces.BaseInterface;
+import com.cjy.mvplibrary.ui.interfaces.BaseInterface;
 import com.cjy.mvplibrary.utils.ToastUtils;
 import com.cjy.mvplibrary.utils.ToolsUtils;
 

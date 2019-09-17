@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.ui.base;
+package com.cjy.mvplibrary.ui;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,10 +8,10 @@ import android.os.IBinder;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
-import com.cjy.mvplibrary.ui.base.interfaces.PresentationLayerFunc;
+import com.cjy.mvplibrary.ui.interfaces.PresentationLayerFunc;
 import com.cjy.mvplibrary.event.BaseEventModel;
-import com.cjy.mvplibrary.ui.base.activity.BaseActivity;
-import com.cjy.mvplibrary.ui.base.interfaces.PublishActivityCallBack;
+import com.cjy.mvplibrary.ui.activity.BaseActivity;
+import com.cjy.mvplibrary.ui.interfaces.PublishActivityCallBack;
 import com.cjy.mvplibrary.utils.LogUtils;
 import com.cjy.mvplibrary.utils.ToastUtils;
 

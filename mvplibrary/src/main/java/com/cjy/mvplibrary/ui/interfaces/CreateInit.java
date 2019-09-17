@@ -1,11 +1,11 @@
-package com.cjy.mvplibrary.ui.base.interfaces;
+package com.cjy.mvplibrary.ui.interfaces;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.cjy.mvplibrary.presenter.base.IMvpView;
-import com.cjy.mvplibrary.presenter.base.Presenter;
+import com.cjy.mvplibrary.presenter.IMvpView;
+import com.cjy.mvplibrary.presenter.Presenter;
 
 /**
  * <公共方法抽象>

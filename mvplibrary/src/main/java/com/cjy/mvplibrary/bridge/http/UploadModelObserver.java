@@ -2,7 +2,7 @@ package com.cjy.mvplibrary.bridge.http;
 
 import android.content.Context;
 
-import com.cjy.mvplibrary.presenter.base.BasePresenter;
+import com.cjy.mvplibrary.presenter.BasePresenter;
 import com.cjy.mvplibrary.view.dialog.UITipDialog;
 import com.cjy.retrofitlibrary.UploadObserver;
 

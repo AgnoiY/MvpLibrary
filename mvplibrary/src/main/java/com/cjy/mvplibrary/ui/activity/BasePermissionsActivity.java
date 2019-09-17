@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.ui.base.activity;
+package com.cjy.mvplibrary.ui.activity;
 
 import android.content.Context;
 import android.content.Intent;

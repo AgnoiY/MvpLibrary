@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.ui.base.delegate;
+package com.cjy.mvplibrary.ui.delegate;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,9 +6,9 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.View;
 
-import com.cjy.mvplibrary.presenter.base.IMvpView;
-import com.cjy.mvplibrary.presenter.base.Presenter;
-import com.cjy.mvplibrary.ui.base.interfaces.CreateInit;
+import com.cjy.mvplibrary.presenter.IMvpView;
+import com.cjy.mvplibrary.presenter.Presenter;
+import com.cjy.mvplibrary.ui.interfaces.CreateInit;
 
 /**
  * Fragment 媒介

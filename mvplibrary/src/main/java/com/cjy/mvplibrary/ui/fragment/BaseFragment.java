@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.ui.base.fragment;
+package com.cjy.mvplibrary.ui.fragment;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,14 +9,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.cjy.mvplibrary.event.BaseEventModel;
-import com.cjy.mvplibrary.presenter.base.BasePresenter;
-import com.cjy.mvplibrary.presenter.base.IMvpView;
-import com.cjy.mvplibrary.ui.base.PresentationLayerFuncHelper;
-import com.cjy.mvplibrary.ui.base.delegate.FragmentMvpDelegate;
-import com.cjy.mvplibrary.ui.base.delegate.FragmentMvpDelegateImpl;
-import com.cjy.mvplibrary.ui.base.interfaces.CreateInit;
-import com.cjy.mvplibrary.ui.base.interfaces.PresentationLayerFunc;
-import com.cjy.mvplibrary.ui.base.interfaces.PublishActivityCallBack;
+import com.cjy.mvplibrary.presenter.BasePresenter;
+import com.cjy.mvplibrary.presenter.IMvpView;
+import com.cjy.mvplibrary.ui.PresentationLayerFuncHelper;
+import com.cjy.mvplibrary.ui.delegate.FragmentMvpDelegate;
+import com.cjy.mvplibrary.ui.delegate.FragmentMvpDelegateImpl;
+import com.cjy.mvplibrary.ui.interfaces.CreateInit;
+import com.cjy.mvplibrary.ui.interfaces.PresentationLayerFunc;
+import com.cjy.mvplibrary.ui.interfaces.PublishActivityCallBack;
 import com.cjy.mvplibrary.utils.GeneralUtils;
 import com.cjy.mvplibrary.utils.ToastUtils;
 import com.trello.rxlifecycle2.components.support.RxFragment;

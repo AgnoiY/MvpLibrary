@@ -3,9 +3,9 @@ package com.cjy.mvpframe;
 import android.view.View;
 
 import com.cjy.mvpframe.databinding.ActivityWelcomeBinding;
-import com.cjy.mvplibrary.presenter.base.BasePresenter;
-import com.cjy.mvplibrary.presenter.base.IMvpView;
-import com.cjy.mvplibrary.ui.base.activity.BaseLoadActivity;
+import com.cjy.mvplibrary.presenter.BasePresenter;
+import com.cjy.mvplibrary.presenter.IMvpView;
+import com.cjy.mvplibrary.ui.activity.BaseLoadActivity;
 import com.cjy.mvplibrary.utils.DownTimeUtils;
 
 import static com.cjy.mvplibrary.constant.Constants.LOG_D;

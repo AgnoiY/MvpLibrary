@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.ui.base.activity;
+package com.cjy.mvplibrary.ui.fragment;
 
 import com.cjy.mvplibrary.R;
 import com.cjy.mvplibrary.databinding.LayoutRecyclerRefreshBinding;
@@ -12,8 +12,9 @@ import com.cjy.mvplibrary.view.recyclerview.RefreshHelper;
  * @author yong
  */
 
-public abstract class BaseRefreshListActivity<T> extends BaseLoadActivity<T, LayoutRecyclerRefreshBinding>
+public abstract class BaseRefreshListFragment<T> extends BaseLazyFragment<T, LayoutRecyclerRefreshBinding>
         implements RecyclerInterface<T> {
+
 
     protected RefreshHelper mRefreshHelper;
 
@@ -26,19 +27,18 @@ public abstract class BaseRefreshListActivity<T> extends BaseLoadActivity<T, Lay
      * 初始化刷新相关
      */
     protected void initRefreshHelper(int limit) {
-        mRefreshHelper = initRefreshHelper(mLoadBinding.refreshLayout, mLoadBinding.rv, limit);
+        mRefreshHelper = initRefreshHelper(mLazyBinding.refreshLayout, mLazyBinding.rv, limit);
         mRefreshHelper.onDefaluteMRefresh();
+
     }
 
-
     @Override
-    public void initNotify() {
-        super.initNotify();
+    public void lazyLoad() {
         initRefreshHelper(setLimit());
     }
 
     /**
-     * 设置一页的加载数据量，为0时默认加载10个
+     * 设置一页的加载数据量，默认加载10个
      *
      * @return
      */

@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.ui.base.activity;
+package com.cjy.mvplibrary.ui.activity;
 
 import android.annotation.SuppressLint;
 import android.databinding.DataBindingUtil;
@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 
 import com.cjy.mvplibrary.R;
 import com.cjy.mvplibrary.databinding.ActivityBaseLoadBinding;
-import com.cjy.mvplibrary.presenter.base.BasePresenter;
-import com.cjy.mvplibrary.presenter.base.IMvpView;
+import com.cjy.mvplibrary.presenter.BasePresenter;
+import com.cjy.mvplibrary.presenter.IMvpView;
 import com.cjy.mvplibrary.statusbar.StatusBarUtils;
-import com.cjy.mvplibrary.ui.base.interfaces.LoadCreateClickListener;
+import com.cjy.mvplibrary.ui.interfaces.LoadCreateClickListener;
 import com.cjy.mvplibrary.utils.GeneralUtils;
 import com.cjy.mvplibrary.utils.HandlerUtils;
 import com.cjy.mvplibrary.utils.NetUtils;

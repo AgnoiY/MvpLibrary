@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.presenter.base;
+package com.cjy.mvplibrary.presenter;
 
 import android.support.annotation.UiThread;
 
@@ -24,8 +24,6 @@ import java.lang.ref.WeakReference;
 public abstract class BasePresenter<V extends IMvpView> implements Presenter<V> {
 
     private WeakReference<V> viewRef;
-
-    private SecurityManager securityManager;
 
     private RetrofitHttp.Builder retrofitHttp;
 
@@ -73,15 +71,6 @@ public abstract class BasePresenter<V extends IMvpView> implements Presenter<V> 
 
     @Override
     public void destroy() {
-    }
-
-    /**
-     * MD5加密
-     */
-    protected SecurityManager getSecurityManager() {
-        if (securityManager == null)
-            securityManager = BridgeFactory.getBridge(Bridges.SECURITY);
-        return securityManager;
     }
 
     /**

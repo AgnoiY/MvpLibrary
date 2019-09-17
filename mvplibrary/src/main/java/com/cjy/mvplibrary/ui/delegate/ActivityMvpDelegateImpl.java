@@ -1,11 +1,11 @@
-package com.cjy.mvplibrary.ui.base.delegate;
+package com.cjy.mvplibrary.ui.delegate;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.cjy.mvplibrary.presenter.base.IMvpView;
-import com.cjy.mvplibrary.presenter.base.Presenter;
-import com.cjy.mvplibrary.ui.base.interfaces.CreateInit;
+import com.cjy.mvplibrary.presenter.IMvpView;
+import com.cjy.mvplibrary.presenter.Presenter;
+import com.cjy.mvplibrary.ui.interfaces.CreateInit;
 
 /**
  * Activity媒介

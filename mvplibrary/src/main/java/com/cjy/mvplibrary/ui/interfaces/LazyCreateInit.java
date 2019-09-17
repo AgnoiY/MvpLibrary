@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.ui.base.interfaces;
+package com.cjy.mvplibrary.ui.interfaces;
 
 /**
  * <功能详细描述>

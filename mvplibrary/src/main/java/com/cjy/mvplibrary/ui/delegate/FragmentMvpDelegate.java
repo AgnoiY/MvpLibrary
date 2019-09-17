@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.ui.base.delegate;
+package com.cjy.mvplibrary.ui.delegate;
 
 import android.app.Activity;
 import android.os.Bundle;

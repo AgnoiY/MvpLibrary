@@ -1,4 +1,4 @@
-package com.cjy.mvplibrary.presenter.base;
+package com.cjy.mvplibrary.presenter;
 
 import android.support.annotation.UiThread;
 

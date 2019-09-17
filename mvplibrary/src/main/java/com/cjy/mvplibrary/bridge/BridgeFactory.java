@@ -1,7 +1,6 @@
 package com.cjy.mvplibrary.bridge;
 
 import com.cjy.mvplibrary.bridge.localstorage.LocalFileStorageManager;
-import com.cjy.mvplibrary.bridge.security.SecurityManager;
 import com.cjy.mvplibrary.bridge.sharepref.SharedPrefManager;
 import com.cjy.retrofitlibrary.RetrofitHttp;
 
@@ -27,8 +26,6 @@ public class BridgeFactory {
         model = new BridgeFactory();
         model.iniLocalFileStorageManager();
         model.initPreferenceManager();
-        model.initSecurityManager();
-        model.initUserSession();
         model.initOkHttpManager(builder);
     }
 
@@ -60,22 +57,6 @@ public class BridgeFactory {
      */
     private void initOkHttpManager(RetrofitHttp.Builder builder) {
         model.mBridges.put(Bridges.HTTP, builder);
-    }
-
-    /**
-     * 初始化安全模块
-     */
-    private void initSecurityManager() {
-        SecurityManager securityManager = new SecurityManager();
-        model.mBridges.put(Bridges.SECURITY, securityManager);
-        BridgeLifeCycleSetKeeper.getInstance().trustBridgeLifeCycle(securityManager);
-    }
-
-    /**
-     * 初始化用户信息模块
-     */
-    private void initUserSession() {
-        // Initialize user information module
     }
 
     /**
