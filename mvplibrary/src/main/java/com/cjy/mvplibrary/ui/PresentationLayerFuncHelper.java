@@ -180,7 +180,6 @@ public class PresentationLayerFuncHelper<T> implements PresentationLayerFunc<T>,
                         LogUtils.w(tag, (Throwable) msg[0]);
                     break;
                 default:
-                    LogUtils.d(tag, msg[0]);
                     break;
             }
         } else if (msg.length == 1) {
